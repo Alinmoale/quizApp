@@ -109,6 +109,7 @@ next.addEventListener("click", () => {
   } else if (index === 8) {
     buttonsDisabled = false;
     question10();
+
     index++;
   } else if (index === 9) {
     buttonsDisabled = false;
@@ -272,7 +273,28 @@ function question10() {
 }
 
 function endGame() {
-  alert(score);
+  next.textContent = "Go Back";
+  document.querySelector(".it-quiz").style.cssText +=
+    "background-color:#0c4d46";
+  document.querySelector(".bottom-answers").style.cssText +=
+    "background-color:#0c4d46";
+  document.querySelector(".back-button").style.cssText +=
+    "background-color:#0c4d46";
+
+  question.textContent = `Your score is ${score}/10`;
+  deleteChild();
+  backbtn.remove();
+  count.remove();
+  next.remove();
+}
+
+function deleteChild() {
+  var e = document.querySelector("ul");
+  var child = e.lastElementChild;
+  while (child) {
+    e.removeChild(child);
+    child = e.lastElementChild;
+  }
 }
 
 question1();
