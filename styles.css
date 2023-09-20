@@ -20,13 +20,23 @@
   margin-right: 20px;
   justify-content: space-between;
 }
+.home-btn {
+  background-color: #0c4d46;
+  border: none;
+  padding-top: 10px;
+  display: none;
+}
+.home-btn lord-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
 .back-button {
   background-color: #168c80;
   border: none;
   padding-top: 10px;
 }
 .back-button lord-icon {
-  font-weight: bold;
   width: 30px;
   height: 30px;
   cursor: pointer;

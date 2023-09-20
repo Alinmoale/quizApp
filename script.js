@@ -8,10 +8,14 @@ let count = document.querySelector(".count");
 let index = 0;
 let score = 0;
 let buttonClicked = false;
+const homebtn = document.querySelector(".home-btn");
 const backbtn = document.querySelector(".back-button");
 const answerButtons = document.querySelectorAll(".answer-btn");
-
 let correct = document.querySelector(".correct");
+
+homebtn.onclick = function () {
+  location.href = "main.html";
+};
 
 // function answerBtn() {
 //   answerButtons.forEach((button) => {
@@ -286,6 +290,7 @@ function endGame() {
   backbtn.remove();
   count.remove();
   next.remove();
+  homebtn.style.display = "block";
 }
 
 function deleteChild() {
