@@ -21,10 +21,10 @@
   justify-content: space-between;
 }
 .home-btn {
-  background-color: #0c4d46;
+  background-color: #168c80;
   border: none;
   padding-top: 10px;
-  display: none;
+  /* display: none; */
 }
 .home-btn lord-icon {
   width: 30px;
@@ -44,6 +44,7 @@
 }
 .count {
   padding-top: 10px;
+  right: 10px;
 }
 .quiz-question {
   display: flex;
@@ -100,4 +101,5 @@ li button:hover {
 }
 .next-question button:hover {
   background-color: #168c80;
+  transition: all 0.5s;
 }

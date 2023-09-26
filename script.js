@@ -18,19 +18,6 @@ homebtn.onclick = function () {
   location.href = "main.html";
 };
 
-// function answerBtn() {
-//   answerButtons.forEach((button) => {
-//     button.addEventListener("click", () => {
-//       if (button.classList.contains("correct")) {
-//         if (!button.classList.contains("clicked")) {
-//           score++;
-//           button.classList.add("clicked");
-//           console.log(score);
-//         }
-//       }
-//     });
-//   });
-// }
 let buttonsDisabled = false;
 function answerBtn() {
   answerButtons.forEach((button) => {
@@ -286,12 +273,13 @@ function endGame() {
   document.querySelector(".back-button").style.cssText +=
     "background-color:#0c4d46";
 
-  question.textContent = `Your score is ${score}/10`;
+  question.textContent = `Your score is ${score}/10 
+   keep it working`;
   deleteChild();
   backbtn.remove();
   count.remove();
   next.remove();
-  homebtn.style.display = "block";
+  homebtn.style.cssText += "background-color:#0c4d46";
   confetti();
   fireworks();
 }
@@ -323,7 +311,7 @@ function fireworks() {
     }
 
     var particleCount = 50 * (timeLeft / duration);
-    // since particles fall down, start a bit higher than random
+
     confetti(
       Object.assign({}, defaults, {
         particleCount,
