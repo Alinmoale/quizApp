@@ -1,0 +1,105 @@
+* {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.main-container {
+  height: 100vh;
+  background-color: #168c80;
+}
+.it-quiz {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 5% 35% 55%;
+}
+.top {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+.home-btn {
+  background-color: #168c80;
+  border: none;
+  padding-top: 10px;
+  /* display: none; */
+}
+.home-btn lord-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.back-button {
+  background-color: #168c80;
+  border: none;
+  padding-top: 10px;
+}
+.back-button lord-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+.count {
+  padding-top: 10px;
+  right: 10px;
+}
+.quiz-question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.bottom-answers {
+  display: flex;
+  background-color: #0c4d46;
+  justify-content: center;
+  border-bottom: #ffffff26 solid 1px;
+}
+.quiz-answers {
+  margin-top: 30px;
+}
+ul {
+  list-style: none;
+}
+li button {
+  border: none;
+  width: 250px;
+  height: 35px;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #168c80;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+li button:hover {
+  background-color: #2ad2c1;
+}
+.correct:focus {
+  background-color: rgb(42, 230, 42);
+}
+
+.incorrect:focus {
+  background-color: rgb(238, 42, 42);
+}
+.next-question {
+  height: 100%;
+}
+.next-question button {
+  border: none;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  background-color: #0c4d46;
+  cursor: pointer;
+  font-size: 15px;
+}
+.next-question button:hover {
+  background-color: #168c80;
+  transition: all 0.5s;
+}
