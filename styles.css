@@ -11,7 +11,7 @@ body {
 .firstP {
   margin-top: 30px;
   margin-left: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   font-size: 30px;
 }
 .Quizes {
@@ -22,31 +22,49 @@ body {
   justify-content: center;
   align-items: center;
 }
-.it-quiz {
+.quiz {
   font-size: 20px;
-  display: flex;
+  display: grid;
   cursor: pointer;
   height: 100px;
   width: 250px;
-  justify-content: center;
+
+  text-align: center;
   align-items: center;
   border-radius: 20px;
+  border-top-left-radius: 0;
   background-color: #12a192;
   border: none;
   /* border: 2px solid black; */
   transition: ease-in-out 0.35s;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-.it-quiz:hover {
+.quiz:hover {
   background-color: #4efceb;
 }
+
 .it-quiz p {
-  color: black;
+  color: #fff;
   font-weight: bold;
+  margin-bottom: 33px;
 }
 .it-quiz img {
-  margin-left: 20px;
-  height: 50px;
-  width: 50px;
+  margin-left: -4px;
+  margin-top: -40px;
+  height: 70px;
+  width: 70px;
+}
+
+.medicine-quiz img {
+  margin-left: -2px;
+  margin-top: -40px;
+  height: 70px;
+  width: 70px;
+}
+
+.medicine-quiz p {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 33px;
 }
