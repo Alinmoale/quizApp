@@ -114,12 +114,12 @@ function question1() {
 
   count.textContent = "1/10";
   question.textContent = "What is the longest bone in the human body?";
-  response1.textContent = "wood";
-  response1.className = "correct";
-  response2.textContent = "iron";
-  response2.className = "incorrect";
-  response3.textContent = "plastic";
-  response4.textContent = "aluminium";
+  response1.textContent = "humerus";
+  response1.className = "incorrect";
+  response2.textContent = "femur";
+  response2.className = "correct";
+  response3.textContent = "breastbone";
+  response4.textContent = "leg bone";
 }
 
 function question2() {
@@ -127,12 +127,12 @@ function question2() {
 
   count.textContent = "2/10";
   question.textContent = "In what part of the body is the zygomatic bone?";
-  response1.textContent = "Alan Turing";
-  response1.className = "incorrect";
-  response2.textContent = "Ada Lovelace";
-  response2.className = "correct";
-  response3.textContent = "Grace Hopper";
-  response4.textContent = "Bob Thomas";
+  response1.textContent = "face";
+  response1.className = "correct";
+  response2.textContent = "back";
+  response2.className = "incorrect";
+  response3.textContent = "thorax";
+  response4.textContent = "legs";
 }
 function question3() {
   {
@@ -141,13 +141,13 @@ function question3() {
     count.textContent = "3/10";
     question.textContent =
       "What is the largest blood vessel in the human body?";
-    response1.textContent = "Trojan virus";
-    response1.className = "incorrect";
-    response2.textContent = "Rabbit Virus";
+    response1.textContent = "aorta artery";
+    response1.className = "correct";
+    response2.textContent = "pulmonary artery";
     response2.className = "incorrect";
-    response3.textContent = "Creeper program";
-    response3.className = "correct";
-    response4.textContent = "LoveLetter Virus";
+    response3.textContent = "vena cava";
+    response3.className = "incorrect";
+    response4.textContent = "femoral artery";
     response4.className = "incorrect";
   }
 }
@@ -157,14 +157,14 @@ function question4() {
 
     count.textContent = "4/10";
     question.textContent = "How many pairs of ribs does a human have?";
-    response1.textContent = "Wide World Web";
+    response1.textContent = "14";
     response1.className = "incorrect";
-    response2.textContent = "World Web Wide";
-    response2.className = "incorrect";
-    response3.textContent = "Web World Wide";
+    response2.textContent = "12";
+    response2.className = "correct";
+    response3.textContent = "8";
     response3.className = "incorrect";
-    response4.textContent = "World Wide Web";
-    response4.className = "correct";
+    response4.textContent = "10";
+    response4.className = "incorrect";
   }
 }
 function question5() {
@@ -173,13 +173,13 @@ function question5() {
 
     count.textContent = "5/10";
     question.textContent = "Hemophilia is a disease of...";
-    response1.textContent = "iMac";
+    response1.textContent = "the tissue";
     response1.className = "incorrect";
-    response2.textContent = "Apple II";
-    response2.className = "correct";
-    response3.textContent = "BBC Micro";
-    response3.className = "incorrect";
-    response4.textContent = "Amiga 500";
+    response2.textContent = "bones";
+    response2.className = "incorrect";
+    response3.textContent = "blood";
+    response3.className = "correct";
+    response4.textContent = "muscles";
     response4.className = "incorrect";
   }
 }
@@ -189,13 +189,13 @@ function question6() {
 
     count.textContent = "6/10";
     question.textContent = "What are white blood cells called?";
-    response1.textContent = "Surfboard";
+    response1.textContent = "erythrocytes";
     response1.className = "incorrect";
-    response2.textContent = "Ironing Board";
-    response2.className = "incorrect";
-    response3.textContent = "Moatherboard";
-    response3.className = "correct";
-    response4.textContent = "Fatherboard";
+    response2.textContent = "leukocyte";
+    response2.className = "correct";
+    response3.textContent = "thrombocytes";
+    response3.className = "incorrect";
+    response4.textContent = "lymphocytes";
     response4.className = "incorrect";
   }
 }
@@ -205,14 +205,14 @@ function question7() {
 
     count.textContent = "7/10";
     question.textContent = "How many chambers does the heart have?";
-    response1.textContent = "Internet Technology";
+    response1.textContent = "2";
     response1.className = "incorrect";
-    response2.textContent = "Information Technology";
-    response2.className = "correct";
-    response3.textContent = "Irritating Tuxedos";
+    response2.textContent = "3";
+    response2.className = "incorrect";
+    response3.textContent = "6";
     response3.className = "incorrect";
-    response4.textContent = "Ivanka Trump";
-    response4.className = "incorrect";
+    response4.textContent = "4";
+    response4.className = "correct";
   }
 }
 function question8() {
@@ -222,14 +222,14 @@ function question8() {
     count.textContent = "8/10";
     question.textContent =
       "What is the strongest muscle compared to its size? ";
-    response1.textContent = "Robert E Kahn";
+    response1.textContent = "trapeze";
     response1.className = "incorrect";
-    response2.textContent = "Charles Babbage";
-    response2.className = "correct";
-    response3.textContent = "Bharles Cabbage";
+    response2.textContent = "biceps";
+    response2.className = "incorrect";
+    response3.textContent = "sartorius";
     response3.className = "incorrect";
-    response4.textContent = "The Wu Tang Clan";
-    response4.className = "incorrect";
+    response4.textContent = "tongue";
+    response4.className = "correct";
   }
 }
 function question9() {
@@ -239,14 +239,14 @@ function question9() {
     count.textContent = "9/10";
     question.textContent =
       "In what part of the body is the epiglottis located?";
-    response1.textContent = "Pokemon";
-    response1.className = "incorrect";
-    response2.textContent = "Chilli";
+    response1.textContent = "neck";
+    response1.className = "correct";
+    response2.textContent = "stomach";
     response2.className = "incorrect";
-    response3.textContent = "Anti-virus software";
+    response3.textContent = "head";
     response3.className = "incorrect";
-    response4.textContent = "Browser";
-    response4.className = "correct";
+    response4.textContent = "thorax";
+    response4.className = "incorrect";
   }
 }
 function question10() {
@@ -255,14 +255,14 @@ function question10() {
 
     count.textContent = "10/10";
     question.textContent = "What is the name of the heart muscle?";
-    response1.textContent = "iMac";
+    response1.textContent = "pericardium";
     response1.className = "incorrect";
-    response2.textContent = "MIT Suitcase Computer";
-    response2.className = "correct";
-    response3.textContent = "ZX Spectrum";
+    response2.textContent = "epicardium";
+    response2.className = "incorrect";
+    response3.textContent = "endocardium";
     response3.className = "incorrect";
-    response4.textContent = "Amiga 500";
-    response4.className = "incorrect";
+    response4.textContent = "myocardium";
+    response4.className = "correct";
   }
 }
 

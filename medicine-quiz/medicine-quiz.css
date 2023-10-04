@@ -49,9 +49,12 @@
 .quiz-question {
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: center;
   font-size: 18px;
   font-weight: 400;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .bottom-answers {
@@ -103,3 +106,9 @@ li button:hover {
   background-color: #168c80;
   transition: all 0.5s;
 }
+/* @media only screen and (max-width: 600px) {
+  .quiz-question {
+    display: flex;
+    text-align: center;
+  }
+} */
