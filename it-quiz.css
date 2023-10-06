@@ -65,20 +65,21 @@
   border-bottom: #ffffff26 solid 1px;
 }
 .quiz-answers {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 ul {
   list-style: none;
 }
 li button {
   border: none;
-  width: 250px;
-  height: 35px;
-  margin-top: 10px;
+  width: 300px;
+  height: 50px;
+  margin-top: 15px;
   text-decoration: none;
   background-color: #168c80;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
+  border-radius: 30px;
 }
 
 li button:hover {
@@ -114,6 +115,8 @@ li button:hover {
   }
   li button {
     font-size: 15px;
+    width: 250px;
+    height: 35px;
   }
   .next-question button {
     font-size: 15px;
