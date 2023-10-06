@@ -273,8 +273,12 @@ function endGame() {
   document.querySelector(".back-button").style.cssText +=
     "background-color:#0c4d46";
 
-  question.textContent = `Your score is ${score}/10 
-   keep it working`;
+  // question.textContent = `Your score is ${score}/10 `;
+  if (score <= 5) {
+    question.textContent = `Your score is ${score}/10 keep it working`;
+  } else {
+    question.textContent = `Your score is ${score}/10 you did a good job`;
+  }
   deleteChild();
   backbtn.remove();
   count.remove();
