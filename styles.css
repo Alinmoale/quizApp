@@ -12,8 +12,8 @@ body {
   background-size: cover;
 }
 .firstP {
+  text-align: center;
   margin-top: 30px;
-  margin-left: 10px;
   margin-bottom: 60px;
   font-size: 30px;
 }
@@ -62,8 +62,8 @@ body {
 }
 
 .it-quiz p {
+  letter-spacing: 2px;
   color: #fff;
-  font-weight: bold;
 }
 
 .medicine-quiz {
@@ -72,9 +72,29 @@ body {
 }
 
 .medicine-quiz p {
+  letter-spacing: 2px;
   color: #fff;
-  font-weight: bold;
 }
+
+.geography-quiz {
+  background-image: url("pictures/3d-rendering-planet-earth.jpg");
+  background-size: cover;
+}
+
+.geography-quiz p {
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.history-quiz {
+  background-image: url("pictures/blue-water.jpg");
+  background-size: cover;
+}
+.history-quiz p {
+  letter-spacing: 2px;
+  color: #fff;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     background-image: url("pictures/questioning-concept-with-question-mark.jpg");
