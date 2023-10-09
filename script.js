@@ -10,5 +10,10 @@ itBtn.onclick = function () {
 medicineBtn.onclick = function () {
   location.href = "medicine-quiz/medicine-quiz.html";
 };
-bg.classList.remove("hidden");
-loader.classList.add("hidden");
+setTimeout(function () {
+  bg.classList.remove("hidden");
+}, 1000);
+
+setTimeout(function () {
+  loader.classList.add("hidden");
+}, 1000);

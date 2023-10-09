@@ -108,8 +108,8 @@
   height: 70px;
   color: black;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 43%;
+  left: 48%;
 }
 .loader:before,
 .loader:after {
@@ -122,12 +122,12 @@
   height: inherit;
   border-radius: 50%;
   transform: rotateX(70deg);
-  animation: 1.1s spin linear infinite;
+  animation: 0.5s spin linear infinite;
 }
 .loader:after {
   color: #168c80;
   transform: rotateY(70deg);
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
 }
 
 @keyframes rotate {
@@ -177,13 +177,10 @@
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-image: url("pictures/questioning-concept-with-question-mark.jpg");
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-  }
   .quiz {
     width: 250px;
+  }
+  .loader {
+    left: 40%;
   }
 }
