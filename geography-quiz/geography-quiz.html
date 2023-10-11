@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="geography-quiz.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="it-quiz">
+        <div class="top">
+          <div class="top-left-btns">
+            <button class="back-button">
+              <lord-icon
+                src="https://cdn.lordicon.com/zmkotitn.json"
+                trigger="hover"
+                colors="primary:#fff"
+              >
+              </lord-icon>
+            </button>
+          </div>
+          <div class="count">1/10</div>
+          <button class="home-btn">
+            <lord-icon
+              src="https://cdn.lordicon.com/osuxyevn.json"
+              trigger="hover"
+              colors="primary:#fff"
+            >
+            </lord-icon>
+          </button>
+        </div>
+        <div class="quiz-question" id="question"></div>
+
+        <div class="bottom-answers">
+          <div class="quiz-answers">
+            <ul>
+              <li>
+                <button class="answer-btn correct" id="response1"></button>
+              </li>
+              <li>
+                <button class="answer-btn incorrect" id="response2"></button>
+              </li>
+              <li>
+                <button class="answer-btn incorrect" id="response3"></button>
+              </li>
+              <li>
+                <button class="answer-btn incorrect" id="response4"></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="next-question"><button class="Next">Next</button></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="geography-quiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+  </body>
+</html>
