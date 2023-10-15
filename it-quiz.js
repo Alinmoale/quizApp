@@ -12,6 +12,7 @@ let correct = document.querySelector(".correct");
 let incorrect = document.querySelector(".incorrect");
 let canvas = document.createElement("canvas");
 let gren = document.querySelector(".gren");
+let reed = document.querySelector(".reed");
 let score = 0;
 let index = 0;
 let buttonClicked = false;
@@ -35,6 +36,7 @@ function answerBtn() {
           }
           button.classList.remove("hover");
         } else {
+          button.classList.add("reed");
           currentCorrectAnswer.classList.add("gren");
         }
         buttonsDisabled = true;
