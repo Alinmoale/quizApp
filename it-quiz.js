@@ -5,32 +5,38 @@ let response3 = document.querySelector("#response3");
 let response4 = document.querySelector("#response4");
 let question = document.querySelector("#question");
 let count = document.querySelector(".count");
-let index = 0;
-let score = 0;
-let buttonClicked = false;
 const homebtn = document.querySelector(".home-btn");
 const backbtn = document.querySelector(".back-button");
 const answerButtons = document.querySelectorAll(".answer-btn");
 let correct = document.querySelector(".correct");
+let incorrect = document.querySelector(".incorrect");
 let canvas = document.createElement("canvas");
+let gren = document.querySelector(".gren");
+let score = 0;
+let index = 0;
+let buttonClicked = false;
+let buttonsDisabled = false;
+let currentCorrectAnswer;
 
 homebtn.onclick = function () {
   location.href = "index.html";
 };
 
-let buttonsDisabled = false;
 function answerBtn() {
   answerButtons.forEach((button) => {
     button.addEventListener("click", () => {
       if (!buttonsDisabled) {
-        if (button.classList.contains("correct")) {
+        if (button === currentCorrectAnswer) {
           if (!button.classList.contains("clicked")) {
             score++;
+            button.classList.add("gren");
             button.classList.add("clicked");
             console.log(score);
           }
+          button.classList.remove("hover");
+        } else {
+          currentCorrectAnswer.classList.add("gren");
         }
-
         buttonsDisabled = true;
       }
     });
@@ -115,11 +121,14 @@ function question1() {
   count.textContent = "1/10";
   question.textContent = "What was the first mouse made of ?";
   response1.textContent = "wood";
-  response1.className = "correct";
+  response1.className = "correct ";
   response2.textContent = "iron";
   response2.className = "incorrect";
   response3.textContent = "plastic";
+  response3.className = "incorrect";
   response4.textContent = "aluminium";
+  response4.className = "incorrect";
+  currentCorrectAnswer = response1;
 }
 
 function question2() {
@@ -132,136 +141,131 @@ function question2() {
   response2.textContent = "Ada Lovelace";
   response2.className = "correct";
   response3.textContent = "Grace Hopper";
+  response3.className = "incorrect";
   response4.textContent = "Bob Thomas";
+  response4.className = "incorrect";
+  currentCorrectAnswer = response2;
 }
 function question3() {
-  {
-    answerBtn();
+  answerBtn();
 
-    count.textContent = "3/10";
-    question.textContent = "What was the name of the first computer virus?";
-    response1.textContent = "Trojan virus";
-    response1.className = "incorrect";
-    response2.textContent = "Rabbit Virus";
-    response2.className = "incorrect";
-    response3.textContent = "Creeper program";
-    response3.className = "correct";
-    response4.textContent = "LoveLetter Virus";
-    response4.className = "incorrect";
-  }
+  count.textContent = "3/10";
+  question.textContent = "What was the name of the first computer virus?";
+  response1.textContent = "Trojan virus";
+  response1.className = "incorrect";
+  response2.textContent = "Rabbit Virus";
+  response2.className = "incorrect";
+  response3.textContent = "Creeper program";
+  response3.className = "correct";
+  response4.textContent = "LoveLetter Virus";
+  response4.className = "incorrect";
+  currentCorrectAnswer = response3;
 }
 function question4() {
-  {
-    answerBtn();
+  answerBtn();
 
-    count.textContent = "4/10";
-    question.textContent = "What www stands for?";
-    response1.textContent = "Wide World Web";
-    response1.className = "incorrect";
-    response2.textContent = "World Web Wide";
-    response2.className = "incorrect";
-    response3.textContent = "Web World Wide";
-    response3.className = "incorrect";
-    response4.textContent = "World Wide Web";
-    response4.className = "correct";
-  }
+  count.textContent = "4/10";
+  question.textContent = "What www stands for?";
+  response1.textContent = "Wide World Web";
+  response1.className = "incorrect";
+  response2.textContent = "World Web Wide";
+  response2.className = "incorrect";
+  response3.textContent = "Web World Wide";
+  response3.className = "incorrect";
+  response4.textContent = "World Wide Web";
+  response4.className = "correct";
+  currentCorrectAnswer = response4;
 }
 function question5() {
-  {
-    answerBtn();
+  answerBtn();
 
-    count.textContent = "5/10";
-    question.textContent =
-      "What was the first computer that had a colour display?";
-    response1.textContent = "iMac";
-    response1.className = "incorrect";
-    response2.textContent = "Apple II";
-    response2.className = "correct";
-    response3.textContent = "BBC Micro";
-    response3.className = "incorrect";
-    response4.textContent = "Amiga 500";
-    response4.className = "incorrect";
-  }
+  count.textContent = "5/10";
+  question.textContent =
+    "What was the first computer that had a colour display?";
+  response1.textContent = "iMac";
+  response1.className = "incorrect";
+  response2.textContent = "Apple II";
+  response2.className = "correct";
+  response3.textContent = "BBC Micro";
+  response3.className = "incorrect";
+  response4.textContent = "Amiga 500";
+  response4.className = "incorrect";
+  currentCorrectAnswer = response2;
 }
 function question6() {
-  {
-    answerBtn();
+  answerBtn();
 
-    count.textContent = "6/10";
-    question.textContent = "What do you call a computer's main circuit board?";
-    response1.textContent = "Surfboard";
-    response1.className = "incorrect";
-    response2.textContent = "Ironing Board";
-    response2.className = "incorrect";
-    response3.textContent = "Moatherboard";
-    response3.className = "correct";
-    response4.textContent = "Fatherboard";
-    response4.className = "incorrect";
-  }
+  count.textContent = "6/10";
+  question.textContent = "What do you call a computer's main circuit board?";
+  response1.textContent = "Surfboard";
+  response1.className = "incorrect";
+  response2.textContent = "Ironing Board";
+  response2.className = "incorrect";
+  response3.textContent = "Moatherboard";
+  response3.className = "correct";
+  response4.textContent = "Fatherboard";
+  response4.className = "incorrect";
+  currentCorrectAnswer = response3;
 }
 function question7() {
-  {
-    answerBtn();
+  answerBtn();
 
-    count.textContent = "7/10";
-    question.textContent = "What does I.T. stand for?";
-    response1.textContent = "Internet Technology";
-    response1.className = "incorrect";
-    response2.textContent = "Information Technology";
-    response2.className = "correct";
-    response3.textContent = "Irritating Tuxedos";
-    response3.className = "incorrect";
-    response4.textContent = "Ivanka Trump";
-    response4.className = "incorrect";
-  }
+  count.textContent = "7/10";
+  question.textContent = "What does I.T. stand for?";
+  response1.textContent = "Internet Technology";
+  response1.className = "incorrect";
+  response2.textContent = "Information Technology";
+  response2.className = "correct";
+  response3.textContent = "Irritating Tuxedos";
+  response3.className = "incorrect";
+  response4.textContent = "Ivanka Trump";
+  response4.className = "incorrect";
+  currentCorrectAnswer = response2;
 }
 function question8() {
-  {
-    answerBtn();
+  answerBtn();
 
-    count.textContent = "8/10";
-    question.textContent = "Who created the first modern computer? ";
-    response1.textContent = "Robert E Kahn";
-    response1.className = "incorrect";
-    response2.textContent = "Charles Babbage";
-    response2.className = "correct";
-    response3.textContent = "Bharles Cabbage";
-    response3.className = "incorrect";
-    response4.textContent = "The Wu Tang Clan";
-    response4.className = "incorrect";
-  }
+  count.textContent = "8/10";
+  question.textContent = "Who created the first modern computer? ";
+  response1.textContent = "Robert E Kahn";
+  response1.className = "incorrect";
+  response2.textContent = "Charles Babbage";
+  response2.className = "correct";
+  response3.textContent = "Bharles Cabbage";
+  response3.className = "incorrect";
+  response4.textContent = "The Wu Tang Clan";
+  response4.className = "incorrect";
+  currentCorrectAnswer = response2;
 }
 function question9() {
-  {
-    answerBtn();
+  answerBtn();
 
-    count.textContent = "9/10";
-    question.textContent = "Firefox and Opera are types of what?";
-    response1.textContent = "Pokemon";
-    response1.className = "incorrect";
-    response2.textContent = "Chilli";
-    response2.className = "incorrect";
-    response3.textContent = "Anti-virus software";
-    response3.className = "incorrect";
-    response4.textContent = "Browser";
-    response4.className = "correct";
-  }
+  count.textContent = "9/10";
+  question.textContent = "Firefox and Opera are types of what?";
+  response1.textContent = "Pokemon";
+  response1.className = "incorrect";
+  response2.textContent = "Chilli";
+  response2.className = "incorrect";
+  response3.textContent = "Anti-virus software";
+  response3.className = "incorrect";
+  response4.textContent = "Browser";
+  response4.className = "correct";
+  currentCorrectAnswer = response4;
 }
 function question10() {
-  {
-    answerBtn();
+  answerBtn();
 
-    count.textContent = "10/10";
-    question.textContent = "What was the first portable computer?";
-    response1.textContent = "iMac";
-    response1.className = "incorrect";
-    response2.textContent = "MIT Suitcase Computer";
-    response2.className = "correct";
-    response3.textContent = "ZX Spectrum";
-    response3.className = "incorrect";
-    response4.textContent = "Amiga 500";
-    response4.className = "incorrect";
-  }
+  count.textContent = "10/10";
+  question.textContent = "What was the first portable computer?";
+  response1.textContent = "iMac";
+  response1.className = "incorrect";
+  response2.textContent = "MIT Suitcase Computer";
+  response2.className = "correct";
+  response3.textContent = "ZX Spectrum";
+  response3.className = "incorrect";
+  response4.textContent = "Amiga 500";
+  response4.className = "incorrect";
+  currentCorrectAnswer = response2;
 }
 
 function endGame() {
@@ -275,9 +279,11 @@ function endGame() {
 
   // question.textContent = `Your score is ${score}/10 `;
   if (score <= 5) {
-    question.textContent = `Your score is ${score}/10 keep it working`;
-  } else {
-    question.textContent = `Your score is ${score}/10 you did a good job`;
+    question.textContent = `Your score is ${score}/10 keep it working!`;
+  } else if (score > 5 && score < 10) {
+    question.textContent = `Your score is ${score}/10 you did a good job!`;
+  } else if (score >= 10) {
+    question.textContent = `Your score is 10/10 you are awesome!`;
   }
   deleteChild();
   backbtn.remove();
