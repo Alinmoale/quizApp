@@ -167,6 +167,20 @@ li button {
     margin-top: 20px;
   }
   .it-quiz {
+    grid-template-rows: 5% 35% 52%;
+  }
+  .next-question button {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .quiz-answers {
+    margin-top: 20px;
+  }
+  .it-quiz {
     grid-template-rows: 5% 35% 42%;
   }
   .next-question button {
