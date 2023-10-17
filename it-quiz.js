@@ -203,7 +203,7 @@ function question6() {
   response1.className = "incorrect";
   response2.textContent = "Ironing Board";
   response2.className = "incorrect";
-  response3.textContent = "Moatherboard";
+  response3.textContent = "Motherboard";
   response3.className = "correct";
   response4.textContent = "Fatherboard";
   response4.className = "incorrect";

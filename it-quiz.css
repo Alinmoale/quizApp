@@ -147,12 +147,52 @@ li button {
     font-size: 18px;
   }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 704px) {
+  body {
+    overflow: hidden;
+  }
+  .it-quiz {
+    grid-template-rows: 5% 35% 48%;
+  }
+  .next-question button {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 944px) {
+  .quiz-answers {
+    margin-top: 20px;
+  }
+  .it-quiz {
+    grid-template-rows: 5% 35% 42%;
+  }
+  .next-question button {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .it-quiz {
+    grid-template-rows: 5% 35% 52%;
+  }
+  .quiz-answers {
+    margin-top: 25px;
+  }
   li button:hover {
     background-color: #2ad2c1;
   }
   .next-question button:hover {
     background-color: #168c80;
     transition: all 0.5s;
+  }
+  .next-question button {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 }

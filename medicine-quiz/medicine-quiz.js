@@ -243,7 +243,7 @@ function question9() {
 
   count.textContent = "9/10";
   question.textContent = "In what part of the body is the epiglottis located?";
-  response1.textContent = "neck";
+  response1.textContent = "throat";
   response1.className = "correct";
   response2.textContent = "stomach";
   response2.className = "incorrect";
