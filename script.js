@@ -1,6 +1,7 @@
 const itBtn = document.querySelector(".it-quiz");
 const medicineBtn = document.querySelector(".medicine-quiz");
 const geographyBtn = document.querySelector(".geography-quiz");
+const historyBtn = document.querySelector(".history-quiz");
 const loader = document.querySelector(".loader");
 const bg = document.querySelector(".bg");
 
@@ -13,6 +14,9 @@ medicineBtn.onclick = function () {
 };
 geographyBtn.onclick = function () {
   location.href = "geography-quiz/geography-quiz.html";
+};
+historyBtn.onclick = function () {
+  location.href = "history-quiz/history-quiz.html";
 };
 
 setTimeout(function () {
